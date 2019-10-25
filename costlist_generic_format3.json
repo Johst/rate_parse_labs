@@ -1,0 +1,39 @@
+{"telenor":
+    {
+     "account":"SMPP_C_ACC1",
+     "received":"2018-12-20",  
+     "effective_costlist":"2019-01-01", 
+     "currency":"EUR",
+     "networks": [{
+        "country":"sweden",
+        "operator":"telia sverige",
+        "network_name":"",
+        "mcc":"234",
+        "mnc":"01",
+        "mccmnc:": "23401",
+        "rate": "0,0216",
+        "effective_cost_netw": "",
+        "changetype":"decrease",
+        "comment":"alfanumeric/shortcode",
+        "volume_based_pricing":"no"
+        }, 
+        {
+        "country":"bulgaria",
+        "operator":"telenor bulgaria",
+        "network_name":"",
+        "mcc":"234",
+        "mnc":"01",
+        "mccmnc:": "28405",
+        "rate": "0,0216",
+        "effective_cost_netw": "",
+        "changetype":"decrease",
+        "comment":"alfanumeric/shortcode",
+        "volume_based_pricing":"no"
+        }]
+    }
+}
+
+
+
+
+
