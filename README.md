@@ -17,4 +17,4 @@ There are a number of approcahes:
 
 # Verify Script #
 
-Open file `costlist_update_from_csv_via_dict.py`. use files `ebss_costlist_old.csv` and `supplier_costlis_new2.csv` as input and the result will end up as file `costlist_simple_result.csv`
+Open file `costlist_update_from_csv_via_dict.py`. use files `ebss_costlist_old.csv` and `supplier_costlis_new2.csv` as input and the result will end up as file `costlist_simple_result.csv` The file paths has to be set in the code as you wish them to be. 
