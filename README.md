@@ -13,3 +13,8 @@ There are a number of approcahes:
 2. Create an in data processor that parse's the file into an internal calaculation/storage JSON format (for example), and then via an out data processor converts it to the specified routing system format. This solution can also include GUI for file logistics (user to set input and output file etc). 
 
 3. Out sources the whole shabang to a 3rd party like IX Links. This will cost you approxematly a CAPEX and then OPEX of about 100 USD per account and month. Then the 3rd party will take over all your communication with the 3rd party and ensure that they dleivery the costlist in the correct format and at the right time, ie ensure that everything techncial and legally agreed is being honored. 
+
+
+# Verify Script #
+
+Open file `costlist_update_from_csv_via_dict.py`. use files `ebss_costlist_old.csv` and `supplier_costlis_new2.csv` as input and the result will end up as file `costlist_simple_result.csv`
