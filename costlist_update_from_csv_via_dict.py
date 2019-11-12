@@ -95,8 +95,7 @@ def updateCostlist():
             reader = csv.reader(csvfile, delimiter=';')
             ratelist = list(reader)
 
-        # Call function with cost updates
-      
+        # Call function with cost updates and add to dictionary
         COST_UPDATES =  csvcostupdateDict(newcostfile)               
         
         # TODO: Loop through the rows and update the prices.
