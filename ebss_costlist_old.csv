@@ -1,0 +1,11 @@
+Region;Country;Op Id;Operator Name;Network Name;Unique Name;MCC;MNC;Price(EUR cent)
+Asia Pacific;Afghanistan;1626;Afghan Telecom;Salaam;Salaam-AF;412;80;2.00
+Asia Pacific;Afghanistan;2;AWCC;AWCC;AWCC-AF;412;01;2.00
+Asia Pacific;Afghanistan;3;Etisalat Afghanistan;Etisalat Afghanistan;Etisalat Afghanistan-AF;412;50;2.00
+Asia Pacific;Afghanistan;5;Unallocated prefix;Unallocated prefix;Unallocated prefix-AF;0;na;2.00
+Europe;Albania;6;AMC;AMC;AMC-AL;276;01;2.00
+Europe;Albania;1058;Eagle Mobile;Eagle Mobile;Eagle Mobile-AL;276;03;2.00
+Europe;Albania;8;Vodafone Albania;Vodafone Albania;Vodafone Albania-AL;276;02;3.60
+MENA;Algeria;9;ATM Mobilis;Mobilis;Mobilis-DZ;603;01;2.00
+MENA;Algeria;12;Ooredoo Algeria;Nedjma;Nedjma-DZ;603;03;2.00
+MENA;Algeria;10;Orascom Algeria;Djezzy;Djezzy-DZ;603;02;2.00
