@@ -23,7 +23,7 @@ Open file `costlist_update_from_csv_via_dict.py`. use files `ebss_costlist_old.c
 
 1. Capture meta data from `new_cost_file ` as it is available; `supplier_name` `account_product`, `validity_date`, `currency`
 2. Read new RATE per MCCMNC from `new_cost_file ` CSV/XLSX into a ` new_dict ` with MCCMNC and RATE as key-value pair. The format of the file may change from supplier to supplier. 
-3. Then download and read the `current_file ` supplier costlist CSV/XLSX from routing system and put data into a ` current_dict ` with MCCMNC and RATE as key-value pair. 
+3. Then download and read the `current_file ` supplier costlist CSV/XLSX from routing system and put data into a ` current_dict ` with MCCMNC and RATE as key-value pair. RATE is in EUR cents in this file...meaning that `new_cost_file ` RATES has to be converted to EUR cent in above step as well. 
 4. Create a function to compare dicts for stats display in html format. Number of networks, Number of networks updated, Old / New Rate / DIFF, new reach added in `new_cost_file `. 
 5. If added reach is found in `new_cost_file `, update the RATE (over write the default) in the `current_file ` as you would for an existining network. However, new reach needs to be flagged to the Routing Team to ensure that the new newtwork(s) are added in system to actual supplier reach. In some but rare cases there will be a need to add a new network id if the added newtwork doesn't exist in the network table of the system.
 6. Open a copy of `current_file ` and loop through each network to replace each COST with matching MCCMNC from the ` new_dict `. 
