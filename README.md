@@ -1,5 +1,5 @@
 # Rate Deck Parsing
-There are several strategies for how to approach this depending on the number of accounts and frequency you have to handle. 
+There are several strategies for how to approach this depending on the number of accounts and frequency of updates that you have to handle. 
 
 **WHAT:** Automate parsing of supplier rate decks, i.e. find the data you need in the files and convert it to a format that your system accepts to upload. The assumptions is that the cost lists from suppliers are sent as email attachments in either CSV or any kind of spreadsheet format like xlsx. 
 
@@ -21,7 +21,7 @@ Open file `costlist_update_from_csv_via_dict.py`. use files `ebss_costlist_old.c
 
 # Functional Design Option 2 # 
 
-1. Capture meta data from `new_cost_file ` as available; `supplier_name` `account_product`, `validity_date`, `currency`
+1. Capture meta data from `new_cost_file ` as it is available; `supplier_name` `account_product`, `validity_date`, `currency`
 2. Read new RATE per MCCMNC from `new_cost_file ` CSV/XLSX into a ` new_dict ` with MCCMNC and RATE as key-value pair. The format of the file may change from supplier to supplier. 
 3. Then download and read the `current_file ` supplier costlist CSV/XLSX from routing system and put data into a ` current_dict ` with MCCMNC and RATE as key-value pair. 
 4. Create a function to compare dicts for stats display in html format. Number of networks, Number of networks updated, Old / New Rate / DIFF, new reach added in `new_cost_file `. 
