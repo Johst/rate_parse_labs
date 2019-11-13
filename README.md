@@ -27,7 +27,7 @@ Open file `costlist_update_from_csv_via_dict.py`. use files `ebss_costlist_old.c
 4. Create a function to compare dicts for stats display in html format. Number of networks, Number of networks updated, Old / New Rate / DIFF, new reach added in `new_cost_file `. 
 5. If added reach is found in `new_cost_file `, update the RATE (over write the default) in the `current_file ` as you would for an existining network. However, new reach needs to be flagged to the Routing Team to ensure that the new newtwork(s) are added in system to actual supplier reach. In some but rare cases there will be a need to add a new network id if the added newtwork doesn't exist in the network table of the system.
 6. Open a copy of `current_file ` and loop through each network to replace each COST with matching MCCMNC from the ` new_dict `. 
-7. Save and re-upload the newly created `current_file ` to the system. 
+7. Re name, save and re-upload the newly created `current_file ` to the system after its network rates have been updated. 
 8. (optional) Add file logistics and valdidation
 
 Python code module name: `rateupdate_supplier_generic.py`
