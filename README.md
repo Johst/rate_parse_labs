@@ -21,9 +21,9 @@ Open file `costlist_update_from_csv_via_dict.py`. use files `ebss_costlist_old.c
 
 # Functional Design Option 2 # 
 
-1. Read new RATE per MCCMNC from `new_cost_file ` CSV/XLSX into a ` new_dict ` with MCCMNC and RATE as key-value pair. 
+1. Read new RATE per MCCMNC from `new_cost_file ` CSV/XLSX into a ` new_dict ` with MCCMNC and RATE as key-value pair. The format of the file may change from supplier to supplier. 
 2. Then download and read the `current_file ` supplier costlist CSV/XLSX from routing system and put data into a ` current_dict ` with MCCMNC and RATE as key-value pair. 
 3. Create a function to compare dicts for stats display in html format. Number of networks, Number of networks updated, Old / New Rate / DIFF, new reach added in `new_cost_file `. 
-4. If added reach is discovered, update the rate (over write the default) in the `current_file ` as you would for an existining network. However, new reach needs to be flagged to the Routing Team to ensure that the new newtwork(s) are added to current supplier reach. In some but rare cases there will be a need to add a new network id if the added newtwork doens't exist in the network table of the system.
-4. Open a copy of `current_file ` and loop through each network to replace each cost with matching MCCMNC from the ` new_dict `. 
+4. If added reach is found in `new_cost_file `, update the RATE (over write the default) in the `current_file ` as you would for an existining network. However, new reach needs to be flagged to the Routing Team to ensure that the new newtwork(s) are added in system to actual supplier reach. In some but rare cases there will be a need to add a new network id if the added newtwork doesn't exist in the network table of the system.
+4. Open a copy of `current_file ` and loop through each network to replace each COST with matching MCCMNC from the ` new_dict `. 
 5. Save and re-upload the newly created `current_file ` to the system. 
