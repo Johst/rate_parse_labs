@@ -19,7 +19,7 @@ There are a number of approcahes:
 
 Open file `costlist_update_from_csv_via_dict.py`. use files `ebss_costlist_old.csv` and `supplier_costlis_new2.csv` as input and the result will end up as file `costlist_simple_result.csv` The file paths has to be set in the code as you wish them to be. 
 
-# Design & TODO For Option 2 # 
+# Functional Design Option 2 # 
 
 1. Read new costs from `new_cost_file ` CSV/XLSX into a ` new_dict ` with MCCMNC and COST. 
 2. Then download and read the `current_file ` supplier costlist CSV/XLSX from routing system and put data into a ` current_dict ` with MCCMNC and COST. 
