@@ -29,5 +29,7 @@ Open file `costlist_update_from_csv_via_dict.py`. use files `ebss_costlist_old.c
 6. Open a copy of `current_file ` and loop through each network to replace each COST with matching MCCMNC from the ` new_dict `. 
 7. Re name, save and re-upload the newly created `current_file ` to the system after its network rates have been updated. 
 8. (optional) Add file logistics and valdidation
+9. (optional) Add input variables for user to define which row data starts, what columns data are in, currency format etc.
+10. (optional) Add html file visualization. The html file should be timed stamped and save as a log of the analysis and new rate deck.
 
 Python code module name: `rateupdate_supplier_generic.py`
