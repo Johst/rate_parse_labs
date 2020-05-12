@@ -1,0 +1,75 @@
+// A message formatted according to the JSON
+// standard is composed of a single top-level object or array. 
+//The array elements and object values can be objects, arrays, 
+//strings, numbers, Boolean values (true and false), or null. 
+
+var pricelist = {
+     "ProviderCompany": "Twilio",
+     "Account": "beep01",
+     "Currency": "EUR",
+     "Networks": [ 
+       {
+           "MCC": "240",
+           "MNC": "02",
+           "Price": "0.04",
+           "Comment": "Alfa only",
+           "Effective": "03/25/2017"
+       },
+       {
+           "MCC": "310",
+           "MNC": "001",
+           "Price": "0.1",
+           "Comment": "",
+           "Effective": "03/25/2017"
+       },
+       {
+           "MCC": "240",
+           "MNC": "04",
+           "Price": "0.06",
+           "Comment": "",
+           "Effective": "03/28/2017"
+       },
+       {
+           "MCC": "241",
+           "MNC": "04",
+           "Price": "0.06",
+           "Comment": "",
+           "Effective": "03/28/2017"
+       }
+     ]
+};
+
+//example Storing JSON Data in Arrays
+
+var family = [{
+    "name" : "Jason",
+    "age" : "24",
+    "gender" : "male"
+},
+{
+    "name" : "Kyle",
+    "age" : "21",
+    "gender" : "male"
+}];
+
+document.write(family[1].name); // Output: Kyle
+document.write(family[0].age); // Output: 24
+
+//Example nested JSON
+
+var family = {
+    "jason" : {
+        "name" : "Jason Lengstorf",
+        "age" : "24",
+        "gender" : "male"
+    },
+    "kyle" : {
+        "name" : "Kyle Lengstorf",
+        "age" : "21",
+        "gender" : "male"
+    }
+}
+
+document.write(family.jason.name); // Output: Jason Lengstorf
+document.write(family.kyle.age); // Output: 21
+document.write(family.jason.gender); // Output: male
